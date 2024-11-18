@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obostha - Foss Delivery Status Tracker</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #161719;
+            color: #d6f60d;
+            line-height: 1.6;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        a {
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #d6f60d;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .navbar .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #161719;
+        }
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        .navbar ul li a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .navbar ul li a:hover {
+            color: #161719;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 20px;
+            background:#161719;
+            color: white;
+            text-align: center;
+        }
+        .hero .content h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .hero .content p {
+            font-size: 1rem; /* Adjusted */
+            margin-bottom: 20px;
+        }
+        .hero .content a {
+            background: #d6f60d;
+            color: #161719;
+            padding: 12px 20px;
+            font-size: 0.9rem; /* Adjusted */
+            font-weight: bold;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+        .hero .content a:hover {
+            background: #d6f60d;
+            color: #161719;
+        }
+        .hero img {
+            max-width: 320px; /* Perfect for mobile view */
+            margin-top: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .features {
+            padding: 40px 20px;
+            background: #d6f60d;
+        }
+        .features h2 {
+            font-size: 1.8rem; /* Adjusted */
+            margin-bottom: 10px;
+            text-align: center;
+            color: #161719;
+        }
+        .features p {
+            font-size: 1rem;
+            color: #161719;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .features .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+        .features .card {
+            background: #161719;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .features .card h3 {
+            font-size: 1.2rem; /* Adjusted */
+            margin-bottom: 10px;
+            color: #d6f60d;
+        }
+        .features .card p {
+            font-size: 0.9rem; /* Adjusted */
+            color: #d6f60d;
+        }
+        footer {
+            padding: 20px 10px;
+            background: #161719;
+            color: white;
+            text-align: center;
+        }
+        footer p {
+            font-size: 0.8rem;
+            margin-bottom: 5px;
+        }
+        footer a {
+            color: #161719;
+            font-size: 0.8rem;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="navbar">
+    <div class="logo">
+        <img src="obostha.svg" alt="Obostha Logo" width="120" height="40">
+    </div>
+    <ul>
+        <li><a href="#features">Features</a></li>
+        <li><a href="https://github.com/satalha/Obostha" target="_blank">Github Repo</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=61556185450330&mibextid=ZbWKwL" target="_blank">Contact</a></li>
+    </ul>
+</header>
+    <section class="hero">
+        <div class="content">
+            <h1>Google Sheet Based Delivery Tracking</h1>
+            <p>Super simple tracking Software.</p>
+            <a href="https://wa.me/message/MB4GTCF5RC6BN1" target="_blank">Get Obostha For Your Business</a>
+        </div>
+        <img src="preview.png" alt="Obostha Preview Android">
+    </section>
+    <section class="features" id="features">
+        <h2>Why Obostha?</h2>
+        <p>Discover why you should use Obostha.</p>
+        <div class="grid">
+            <div class="card">
+                <h3>Google Sheet Based</h3>
+                <p>Update your tracking info on Google Sheets, and your customers can track orders easily</p>
+            </div>
+            <div class="card">
+                <h3>Real-Time Updates</h3>
+                <p>Stay up-to-date with instant updates.</p>
+            </div>
+            <div class="card">
+                <h3>User-Friendly</h3>
+                <p>Obostha's interface built for all skill levels.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>©2024 Omisron Universe.</p>
+        <p>This software is licensed under the MIT License.</p>
+    </footer>
+
+</body>
+</html>
